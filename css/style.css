@@ -124,7 +124,7 @@ iframe {
 	margin: auto 1rem;
 }
 .card {
-	-webkit-box-shadow: 0px 5px 5px 0px rgb(214, 214, 214);
+	-webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 	-moz-box-shadow: 0px 5px 5px 0px rgb(214, 214, 214);
 	box-shadow: 0px 5px 5px 3px rgb(214, 214, 214);
 	border-left: 15px solid #40a4f4;
@@ -146,6 +146,8 @@ nav {
 	text-align: center;
 	text-transform: uppercase;
 	background-color: white;
+	-webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 nav ul {
@@ -158,8 +160,6 @@ nav ul {
 nav li {
 	display: inline-block;
 	position: relative;
-	/* border-bottom: 5px solid white;
-	bottom: -4px; */
 }
 nav a {
 	position: relative;
@@ -205,7 +205,7 @@ nav li:hover:nth-of-type(4)::after {
 .imagenes {
 	border-color: crimson;
 	display: flex;
-	flex-direction: column;
+	flex-direction: olumn;
 	align-items: center;
 	padding: 1rem;
 }
