@@ -32,6 +32,7 @@ h1 {
 	margin-bottom: 2rem;
 	font-size: 2.5rem;
 	text-align: center;
+	border-bottom: 10px solid #31d898;
 }
 
 h2 {
@@ -169,14 +170,19 @@ nav a {
 	border-radius: 5px;
 }
 
-nav li:hover::after {
+nav li::after {
 	content: "";
 	position: absolute;
 	width: 100%;
 	height: 0;
 	left: 0;
 	bottom: -5px;
-	border-bottom: 5px solid red;
+	border-bottom: 0px solid;
+	transition: 0.2s ease;
+}
+nav li:hover::after {
+	border-bottom: 5px solid;
+	transition: 0.1s ease;
 }
 
 nav li:hover:nth-of-type(1)::after {
@@ -191,6 +197,7 @@ nav li:hover:nth-of-type(3)::after {
 nav li:hover:nth-of-type(4)::after {
 	border-color: crimson;
 }
+
 .acerca {
 	padding-top: 10rem;
 	margin-top: -9rem;
@@ -213,6 +220,24 @@ nav li:hover:nth-of-type(4)::after {
 .imagenes img {
 	width: 100%;
 	margin-bottom: 1rem;
+}
+
+.back2top {
+	position: fixed;
+	display: inline;
+	right: 2rem;
+	bottom: 2rem;
+	background-color: #31d898;
+	color: white;
+	padding: 0.5rem 1.2rem 0.6rem 1.3rem;
+	border-radius: 3rem;
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-align: center;
+	-webkit-box-shadow: -4px 0 5px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: -4px 0 5px rgba(0, 0, 0, 0.25);
+	box-shadow: -4px 0 5px rgba(0, 0, 0, 0.25);
+	transform: rotate(-90deg);
 }
 
 /*  Responsive Queries - Desktop */
