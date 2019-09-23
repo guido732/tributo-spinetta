@@ -17,6 +17,7 @@ body {
 	text-align: center;
 	background-color: #ffffff;
 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' width='40' height='40'%3E%3Cpath fill='%23e7e7e7' fill-opacity='0.6' d='M14 16H9v-2h5V9.87a4 4 0 1 1 2 0V14h5v2h-5v15.95A10 10 0 0 0 23.66 27l-3.46-2 8.2-2.2-2.9 5a12 12 0 0 1-21 0l-2.89-5 8.2 2.2-3.47 2A10 10 0 0 0 14 31.95V16zm40 40h-5v-2h5v-4.13a4 4 0 1 1 2 0V54h5v2h-5v15.95A10 10 0 0 0 63.66 67l-3.47-2 8.2-2.2-2.88 5a12 12 0 0 1-21.02 0l-2.88-5 8.2 2.2-3.47 2A10 10 0 0 0 54 71.95V56zm-39 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm40-40a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM15 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm40 40a2 2 0 1 0 0-4 2 2 0 0 0 0 4z'%3E%3C/path%3E%3C/svg%3E");
+	animation: bg 25s infinite linear;
 }
 /* Estilos generales de clase */
 h1,
@@ -212,7 +213,7 @@ nav li:hover:nth-of-type(4)::after {
 .imagenes {
 	border-color: crimson;
 	display: flex;
-	flex-direction: olumn;
+	flex-direction: column;
 	align-items: center;
 	padding: 1rem;
 }
@@ -222,22 +223,43 @@ nav li:hover:nth-of-type(4)::after {
 	margin-bottom: 1rem;
 }
 
-.back2top {
+.backtotop {
 	position: fixed;
 	display: inline;
 	right: 2rem;
 	bottom: 2rem;
-	background-color: #31d898;
-	color: white;
-	padding: 0.5rem 1.2rem 0.6rem 1.3rem;
-	border-radius: 3rem;
-	font-size: 1.5rem;
-	font-weight: 400;
+	padding: 1rem;
 	text-align: center;
-	-webkit-box-shadow: -4px 0 5px rgba(0, 0, 0, 0.25);
-	-moz-box-shadow: -4px 0 5px rgba(0, 0, 0, 0.25);
-	box-shadow: -4px 0 5px rgba(0, 0, 0, 0.25);
-	transform: rotate(-90deg);
+}
+.backtotop img {
+	background-color: #31d898;
+	width: 3rem;
+	padding: 1.1rem 1rem;
+	border-radius: 2rem;
+}
+.backtotop img:hover {
+	border-radius: 2rem;
+}
+.backtotop:hover {
+	animation: flip 0.6s 1;
+}
+
+@keyframes flip {
+	100% {
+		transform: rotatey(180deg);
+		transition: 0;
+	}
+}
+
+@keyframes bg {
+	from {
+		background-position-x: 0%;
+		background-position-y: 0%;
+	}
+	to {
+		background-position-x: 50%;
+		background-position-y: 25%;
+	}
 }
 
 /*  Responsive Queries - Desktop */
