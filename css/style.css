@@ -257,8 +257,8 @@ nav li:hover:nth-of-type(4)::after {
 		background-position-y: 0%;
 	}
 	to {
-		background-position-x: 50%;
-		background-position-y: 25%;
+		background-position-x: 25%;
+		background-position-y: 12.5%;
 	}
 }
 
