@@ -270,7 +270,7 @@ nav a {
   position: fixed;
   display: inline;
   right: 2rem;
-  bottom: 2rem;
+  bottom: 1rem;
   padding: 1rem;
   text-align: center;
 }
