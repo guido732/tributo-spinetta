@@ -76,11 +76,12 @@ a {
   text-decoration: none;
   color: inherit;
   transition: 0.5s;
-  .anchor {
-    position: relative;
-    top: -100px;
-    visibility: hidden;
-  }
+}
+.anchor {
+  position: relative;
+  display: block;
+  visibility: hidden;
+  top: -100px;
 }
 a:hover,
 img:hover {

@@ -82,10 +82,11 @@ a {
   transition: 0.5s;
 }
 
-a .anchor {
+.anchor {
   position: relative;
-  top: -100px;
+  display: block;
   visibility: hidden;
+  top: -100px;
 }
 
 a:hover,
